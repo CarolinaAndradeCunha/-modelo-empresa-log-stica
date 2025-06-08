@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlobalLogix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <section class="hero">
+    <h1>GlobalLogix</h1>
+    <p>Soluções inteligentes para sua logística</p>
+    <p class="descricao">
+      Ajudamos grandes empresas a otimizarem suas entregas, com controle total da cadeia logística e tecnologia de ponta.
+    </p>
+    <div class="botoes">
+      <a href="#" class="btn btn-cliente">Quero ser Cliente</a>
+      <button id="btnEntrar" class="btn btn-login">Área de Login</button>
+    </div>
+  </section>
+  <!-- Seção de Serviços -->
+<section class="servicos">
+  <h2>Nossos Serviços</h2>
+  <div class="cards-servicos">
+    <div class="card">
+      <h3>Gestão de Entregas</h3>
+      <p>Monitoramento em tempo real e otimização de rotas para entregas mais rápidas.</p>
+    </div>
+    <div class="card">
+      <h3>Controle de Estoque</h3>
+      <p>Tenha total controle sobre seu estoque com relatórios automatizados.</p>
+    </div>
+    <div class="card">
+      <h3>Integração com Sistemas</h3>
+      <p>Nosso sistema se conecta com ERPs e CRMs para facilitar a gestão.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Formulário para Novos Clientes -->
+<section id="formulario" class="formulario hidden">
+  <h2>Seja Nosso Cliente</h2>
+  <form id="formCliente">
+    <input type="text" placeholder="Seu nome" required />
+    <input type="email" placeholder="Seu e-mail" required />
+    <textarea placeholder="Conte um pouco sobre sua empresa..." required></textarea>
+    <button type="submit">Enviar</button>
+    <p id="msgForm"></p>
+  </form>
+</section>
+
+  <!-- Escolha -->
+  <section id="escolha" class="escolha hidden">
+    <h2>Você é:</h2>
+    <div class="opcoes">
+      <button class="btn" id="btnCliente">Cliente</button>
+      <button class="btn" id="btnFuncionario">Funcionário</button>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section id="login" class="login-section hidden">
+    <div class="container">
+      <h2 id="tipoLogin">Login</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuário" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+        <p id="mensagem"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Página pós-login -->
+  <section id="painel" class="painel hidden">
+    <h2>Bem-vindo(a) ao painel da GlobalLogix!</h2>
+    <p>Aqui você poderá acompanhar pedidos, entregas e muito mais.</p>
+    <button id="sair" class="btn">Sair</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
